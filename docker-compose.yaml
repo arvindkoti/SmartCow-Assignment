@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+  react-ui:
+    build: ./sys-stats
+    ports:
+      - "3000:3000"
